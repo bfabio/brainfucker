@@ -53,7 +53,7 @@ main (int argc, char *argv)
         int j;
 
         printf ("++++++++++");
-        if (tape[i].c / 10 > 0) {
+        if (tape[i].c >= 10) {
             putchar ('[');
             for (j = 0; j <= i; j++)              { putchar ('>'); }
 
