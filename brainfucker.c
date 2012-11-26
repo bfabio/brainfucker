@@ -49,7 +49,7 @@ main (int argc, char *argv)
 
     qsort (tape, ASCII_CHS, sizeof (struct ch), cmp);
 
-    for (i = 0; i < ASCII_CHS && tape[i].freq; i++) { 
+    for (i = 0; i < ASCII_CHS && tape[i].freq; i++) {
         int j;
 
         printf ("++++++++++");
@@ -66,7 +66,7 @@ main (int argc, char *argv)
         for (j = 0; j < tape[i].c % 10; j++ )     { putchar ('+'); }
         for (j = 0; j <= i; j++)                  { putchar ('<'); }
 
-        idx[tape[i].c] = i; 
+        idx[tape[i].c] = i;
     }
 
     putchar ('>');
