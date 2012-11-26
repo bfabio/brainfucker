@@ -70,7 +70,7 @@ main (int argc, char *argv)
     }
 
     putchar ('>');
-    while (*input++) {
+    while (*input) {
         char direction;
         int  shift;
 
@@ -81,6 +81,8 @@ main (int argc, char *argv)
 
         putchar ('.');
         pos = idx[*input];
+
+        ++input;
     }
     putchar ('\n');
 
