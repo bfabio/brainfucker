@@ -31,3 +31,7 @@ ASCII art in Brainfuck.
 Wastes even more time.
 
     echo foo | brainfucker | brainfucker | brainfucker | brainfucker
+
+License
+-------
+Released under the Modified BSD License.
